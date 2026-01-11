@@ -12,14 +12,14 @@
 			"types": "./config-eslint.d.ts"
 		},
 		"./config-prettier.js": {
-			"require": "./config-prettier.cjs",
+			"require": "./config-prettier.js",
 			"types": "./config-prettier.d.ts"
 		}
 	},
 	"types": "./output/index.d.ts",
 	"files": [
 		"config-eslint.js",
-		"config-prettier.cjs",
+		"config-prettier.js",
 		"scripts-nodejs.js"
 	],
 	"scripts": {
@@ -53,5 +53,5 @@
 		"@types/node": "^25.0.6",
 		"typescript": "^5.9.3"
 	},
-	"prettier": "./config-prettier.cjs"
+	"prettier": "./config-prettier.js"
 }
