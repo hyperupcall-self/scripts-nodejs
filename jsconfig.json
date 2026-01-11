@@ -1,5 +1,5 @@
 {
-	"include": ["config-eslint.js", "config-prettier.cjs", "scripts-nodejs.js"],
+	"include": ["config-eslint.js", "config-prettier.js", "scripts-nodejs.js"],
 	"compilerOptions": {
 		"allowJs": true,
 		"checkJs": true,
