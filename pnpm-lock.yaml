@@ -72,6 +72,9 @@ importers:
         specifier: ^0.21.2
         version: 0.21.2(prettier@3.7.4)
     devDependencies:
+      '@hyperupcall/scripts-nodejs':
+        specifier: ^0.6.0
+        version: 0.6.0(@typescript-eslint/utils@8.52.0(eslint@9.39.2)(typescript@5.9.3))(eslint-import-resolver-node@0.3.9)(typescript@5.9.3)
       '@types/node':
         specifier: ^25.0.6
         version: 25.0.6
@@ -242,6 +245,10 @@ packages:
 
   '@hyperupcall/prettier-config@0.11.0':
     resolution: {integrity: sha512-5d+w/AOBFXHQgrkKTP4COu3F/m73aV3SqRvt2Kg4IsY5EHMImBzzSep66L7ETFQ7cQUFs5E5oDCC/sRtdy5Yiw==}
+
+  '@hyperupcall/scripts-nodejs@0.6.0':
+    resolution: {integrity: sha512-YcDvFBja4YnN4KSOH/HQjVLVAEE8BrxszgBUFie3c2OFOWamUm7wRz3v1MNdETtsxSImSYIaPyED9NWgFQ0xbQ==}
+    hasBin: true
 
   '@isaacs/cliui@8.0.2':
     resolution: {integrity: sha512-O8jcjabXaleOG9DQ0+ARXWZBTfnP4WNAqzuiJK7ll44AmxGKv/J2M4TPjxjY3znBCfvBXFzucm1twdyFybFqEA==}
@@ -1961,6 +1968,38 @@ snapshots:
   '@hyperupcall/prettier-config@0.11.0':
     dependencies:
       '@hyperupcall/config-utils': 0.5.0
+
+  '@hyperupcall/scripts-nodejs@0.6.0(@typescript-eslint/utils@8.52.0(eslint@9.39.2)(typescript@5.9.3))(eslint-import-resolver-node@0.3.9)(typescript@5.9.3)':
+    dependencies:
+      '@eslint-community/eslint-plugin-eslint-comments': 4.5.0(eslint@9.39.2)
+      '@eslint/css': 0.14.1
+      '@eslint/js': 9.39.2
+      '@eslint/json': 0.14.0
+      '@eslint/markdown': 7.5.1
+      '@hyperupcall/eslint-config': 1.4.1(@eslint-community/eslint-plugin-eslint-comments@4.5.0(eslint@9.39.2))(@eslint/css@0.14.1)(@eslint/js@9.39.2)(@eslint/json@0.14.0)(@eslint/markdown@7.5.1)(eslint-config-prettier@10.1.8(eslint@9.39.2))(eslint-plugin-import-x@4.16.1(@typescript-eslint/utils@8.52.0(eslint@9.39.2)(typescript@5.9.3))(eslint-import-resolver-node@0.3.9)(eslint@9.39.2))(eslint-plugin-markdown@5.1.0(eslint@9.39.2))(eslint-plugin-mdx@3.6.2(eslint@9.39.2))(eslint-plugin-n@17.23.1(eslint@9.39.2)(typescript@5.9.3))(eslint-plugin-no-unsanitized@4.1.4(eslint@9.39.2))(eslint-plugin-perfectionist@5.3.1(eslint@9.39.2)(typescript@5.9.3))(eslint-plugin-promise@7.2.1(eslint@9.39.2))(eslint-plugin-regexp@2.10.0(eslint@9.39.2))(eslint-plugin-security@3.0.1)(eslint-plugin-unicorn@62.0.0(eslint@9.39.2))(eslint@9.39.2)
+      '@hyperupcall/prettier-config': 0.11.0
+      eslint: 9.39.2
+      eslint-config-prettier: 10.1.8(eslint@9.39.2)
+      eslint-plugin-import-x: 4.16.1(@typescript-eslint/utils@8.52.0(eslint@9.39.2)(typescript@5.9.3))(eslint-import-resolver-node@0.3.9)(eslint@9.39.2)
+      eslint-plugin-markdown: 5.1.0(eslint@9.39.2)
+      eslint-plugin-mdx: 3.6.2(eslint@9.39.2)
+      eslint-plugin-n: 17.23.1(eslint@9.39.2)(typescript@5.9.3)
+      eslint-plugin-no-unsanitized: 4.1.4(eslint@9.39.2)
+      eslint-plugin-perfectionist: 5.3.1(eslint@9.39.2)(typescript@5.9.3)
+      eslint-plugin-promise: 7.2.1(eslint@9.39.2)
+      eslint-plugin-regexp: 2.10.0(eslint@9.39.2)
+      eslint-plugin-security: 3.0.1
+      eslint-plugin-unicorn: 62.0.0(eslint@9.39.2)
+      prettier: 3.7.4
+      prettier-plugin-pkg: 0.21.2(prettier@3.7.4)
+    transitivePeerDependencies:
+      - '@typescript-eslint/utils'
+      - bluebird
+      - eslint-import-resolver-node
+      - jiti
+      - remark-lint-file-extension
+      - supports-color
+      - typescript
 
   '@isaacs/cliui@8.0.2':
     dependencies:

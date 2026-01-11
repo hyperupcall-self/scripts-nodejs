@@ -6,6 +6,7 @@
 	"bin": {
 		"hyperupcall-scripts-nodejs": "./scripts-nodejs.js"
 	},
+	"types": "./output/index.d.ts",
 	"exports": {
 		"./config-eslint.js": {
 			"import": "./config-eslint.js",
@@ -16,7 +17,6 @@
 			"types": "./config-prettier.d.ts"
 		}
 	},
-	"types": "./output/index.d.ts",
 	"files": [
 		"config-eslint.js",
 		"config-prettier.js",
@@ -50,6 +50,7 @@
 		"prettier-plugin-pkg": "^0.21.2"
 	},
 	"devDependencies": {
+		"@hyperupcall/scripts-nodejs": "^0.6.0",
 		"@types/node": "^25.0.6",
 		"typescript": "^5.9.3"
 	},
